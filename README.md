@@ -1,122 +1,95 @@
-# IPRIoT Project: Simulated Workplace Scenario
+# Smart Carpark Project: City of Moondalup
 
-A simulated workplace environment where students must demonstrate OO skills by interpreting and interacting with modern software requirements.
+This repository holds my submission for AT3 Project Option 1. The project is a
+small object oriented Python application that simulates a smart carpark in the
+City of Moondalup. It reads configuration from a JSON file, processes car entry
+and exit events from a simulated sensor, writes activity to a log file, and
+shows the number of free bays and the current temperature on a windowed display.
 
 ## Scenario
 
-You are working as a junior software innovation engineer for the City of Moondalup in the Department of Transport. The department wants to upgrade a few public carparks by providing information about the number of available parking spots in near real time.
+I worked the role of a junior software innovation engineer for the City of
+Moondalup, Department of Transport. The city wants to upgrade a number of
+public carparks by providing live information about the number of available
+parking bays.
 
-## Resources
-
-For this project, you will be using foundational agile practices:
-
-- An emphasis on collaboration and communication
-- Small rapid iterations
-- Minimal, user-focused documentation (how does this help the user?)
-
-However, because in this simulation you may have limited access to developers and customers. They have provided you with some documentation to help get you started:
+## Project layout
 
 ```text
-│
-├── docs/
-│   ├── requirements.md
-│   └── high_level_design.md
+.
+|-- docs/
+|   |-- requirements.md
+|   |-- high_level_design.md
+|   `-- flowdiagram.md
+|-- samples_and_snippets/
+|   `-- config.json
+|-- smartpark/
+|   |-- car.py
+|   |-- carpark.py
+|   |-- config.json
+|   |-- config_parser.py
+|   |-- interfaces.py
+|   `-- no_pi.py
+|-- tests/
+|   |-- carpark_test.py
+|   `-- test_config.py
+|-- checklist.md
+|-- README.md
+|-- LICENSE
+`-- setup.py
 ```
-
-- **`requirements.md`**: provides a brief agile specification for the project. Please note that unlike a typical agile specifications some requirements are not-user driven but are constraints needed to achieve competency in the unit.
-- **`high_level_design`**: because you are a junior developer, the senior developer was asked to write a more detailed specification to help you achieve some of the more difficult aspects of this project.
 
 ## Getting started
 
-To get started with this project fork and then clone this repository:
-
-1. From the top right, press **Fork**. This creates a copy of the repository in your GitHub account.
-
-2. After the forking process is complete, press the green **Code** button *on your forked repository*.
-
-3. Copy the URL displayed under "Clone with HTTPS" by pressing the clipboard icon next to it.
-
-4. You did copy **your** forked repository URL, **not** this repository's URL, right?
-
-5. Open a terminal (Command Prompt or Git Bash on Windows, Terminal on macOS and Linux) on your local machine.
-
-6. Navigate to the directory where you want to clone the repository by using the `cd` command. For example:
-
-```bash
-cd /path/to/your/directory
-```
-
-7. Clone the repository to your local machine by running the `git clone` command followed by the copied URL:
-
-```bash
-git clone https://github.com/your-username/civ-ipriot-proj-carpark.git
-```
-
-### Making local changes
-
-1. Change to the cloned repository's directory:
-
-```bash
-cd civ-ipriot-proj-carpark
-```
-
-2.  Create a new branch for your local modifications by running:
-
-```bash
-git checkout -b your-new-branch-name
-```
-
-Now you can make local modifications to the project files. After you have made the desired changes, follow these steps to commit and push them:
-
-1. Stage the modified files by running:
-
-```bash
-git add .
-```
-
-2. Commit the changes with a descriptive message:
-
-```bash
-git commit -m "Your commit message here"
-```
-
-3. Push the changes to your forked repository on GitHub:
-
-```bash
-git push origin your-new-branch-name
-```
-
-## Optional: Install this project as a module (makes imports easier!)
-
-The `setup.py` file contains information about the project, its dependencies, and how to run the main script.
-
-To install the SmartPark project as a module in development mode, follow these steps:
-
-1. Open a terminal and navigate to the SmartPark project directory (the one containing `setup.py`). 
-2. Ensure you have a virtual environment activated for the project. If not, you can create one using:
+1. Clone this repository to your machine.
+2. Create a virtual environment and activate it.
 
 ```bash
 python3 -m venv .venv
-```
-
-Then activate the virtual environment:
-
-- On Linux/macOS:
-
-```bash
 source .venv/bin/activate
 ```
 
-- On Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-3. Install the SmartPark project in development mode using:
+3. Install the project in editable mode if you want clean imports.
 
 ```bash
 pip install -e .
 ```
 
-This command installs the project in editable mode, which means any changes you make to the source code will be immediately reflected in the installed module.
+## Running the application
+
+```bash
+cd smartpark
+python3 no_pi.py
+```
+
+Two tkinter windows open. One is the public display showing the free bay
+count, the temperature, and the current time. The other is a control window
+that plays the role of the entry and exit sensors. Type a license plate, type
+a temperature, then press the incoming or outgoing buttons to drive the
+simulation.
+
+## Running the tests
+
+```bash
+python3 -m unittest discover -s tests -p "*.py" -v
+```
+
+All eight tests should pass. The tests cover the configuration parser, entry
+and exit bay counting, the zero capacity edge case, the unknown plate edge
+case, and the temperature reading store.
+
+## Configuration file
+
+The CarPark loads its setup from `samples_and_snippets/config.json` by
+default. A copy of the same shape lives at `smartpark/config.json` so the
+config can travel with the code. The fields read by the application are
+`name`, `location`, `total-spaces`, `broker` and `port`. The `Sensors` and
+`Displays` lists are read so the application knows what hardware the lot is
+expected to expose.
+
+## Activity log
+
+Every entry, exit, temperature reading, and rejected event is written to
+`carpark_log.txt` in the current working directory. The file is created on
+first write and appended thereafter. The log file gives the parking officer
+an audit trail of every interaction with the carpark.

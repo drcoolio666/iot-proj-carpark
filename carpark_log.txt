@@ -1,0 +1,27 @@
+2026-05-30 23:19:53 | entry rejected, blank plate
+2026-05-30 23:20:05 | temperature reading 1.0
+2026-05-30 23:20:05 | temperature reading 12.0
+2026-05-30 23:22:00 | entry, plate 13013, model Unknown
+2026-05-30 23:22:01 | exit, plate 13013, parked for 1 seconds
+2026-05-30 23:22:03 | entry, plate 13013, model Unknown
+2026-05-30 23:22:05 | duplicate entry ignored for plate 13013
+2026-05-30 23:22:15 | entry, plate 1701, model Unknown
+2026-05-30 23:22:23 | entry, plate 527, model Unknown
+2026-05-30 23:22:29 | exit anomaly, unknown plate 14752
+2026-05-30 23:22:34 | exit anomaly, unknown plate 14752
+2026-05-30 23:22:37 | entry, plate 1, model Unknown
+2026-05-30 23:22:41 | entry, plate 2, model Unknown
+2026-05-30 23:22:45 | entry, plate 3, model Unknown
+2026-05-30 23:22:49 | entry, plate 5, model Unknown
+2026-05-30 23:22:53 | exit, plate 1, parked for 15 seconds
+2026-05-30 23:22:57 | exit anomaly, unknown plate 4
+2026-05-30 23:22:59 | exit anomaly, unknown plate 4
+2026-05-30 23:23:01 | exit anomaly, unknown plate 4
+2026-05-30 23:23:04 | exit, plate 3, parked for 18 seconds
+2026-05-30 23:23:17 | exit anomaly, unknown plate 8
+2026-05-30 23:23:19 | exit anomaly, unknown plate 8
+2026-05-30 23:23:20 | exit anomaly, unknown plate 8
+2026-05-30 23:23:20 | exit anomaly, unknown plate 8
+2026-05-30 23:23:24 | exit anomaly, unknown plate 7
+2026-05-30 23:23:27 | exit anomaly, unknown plate 9
+2026-05-30 23:23:30 | exit anomaly, unknown plate 3

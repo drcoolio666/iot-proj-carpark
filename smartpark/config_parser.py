@@ -1,47 +1,35 @@
-"""A class or function to parse the config file and return the values as a dictionary.
+"""Configuration parser.
 
-The config file itself can be any of the following formats (recommend one of pandas, json, or ryo):
-
-- You can use pandas to read a data file if you like. Something simple like a CSV would be best.
-
-- ryo: means 'roll your own' and is a simple text file with key-value pairs separated by an equals sign. For example:
-```
-location = "Moondalup City Square Parking"
-number_of_spaces = 192
-```
-**you** read the file and parse it into a dictionary.
-- json: a json file with key-value pairs. For example:
-```json
-{location: "Moondalup City Square Parking", number_of_spaces: 192}
-```
-json is built in to python, so you can use the json module to parse it into a dictionary.
-- toml: a toml file with key-value pairs. For example:
-```toml
-[location]
-name = "Moondalup City Square Parking"
-spaces = 192
-```
-toml is part of the standard library in python 3.11, otherwise you need to install tomli to parse it into a dictionary.
-```bash
-python -m pip install tomli
-```
-see [realpython.com](https://realpython.com/python-toml/) for more info.
-
-Finally, you can use `yaml` if you prefer.
-
-
-
+Reads the JSON configuration file and hands back the dictionary describing
+the first carpark in the file. The file format and the helper are kept
+separate from the CarPark class so the same parser can be reused by tests
+and by any future tooling.
 """
 
+import json
+import os
 
 
-def parse_config(config_file: str) -> dict:
-    """Parse the config file and return the values as a dictionary"""
-    import json
-    with open(config_file) as input_file:
-        config = json.load(input_file)
-    return config["CarParks"][0]
+def parse_config(config_file):
+    """Parse the config file and return the carpark configuration dictionary.
 
-if __name__ == '__main__':
-    cfg_data=parse_config("samples_and_snippets\\config.json")
-    print(cfg_data)
+    The parser is forgiving about two shapes:
+
+    1. A flat object describing a single carpark.
+    2. The richer shape used by the sample file that wraps the carpark inside
+       a top level "CarParks" list. The first carpark in the list is returned.
+    """
+    with open(config_file, "r") as input_file:
+        data = json.load(input_file)
+
+    if isinstance(data, dict) and "CarParks" in data:
+        return data["CarParks"][0]
+    return data
+
+
+if __name__ == "__main__":
+    here = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(here)
+    sample_path = os.path.join(project_root, "samples_and_snippets", "config.json")
+    config = parse_config(sample_path)
+    print(config)
