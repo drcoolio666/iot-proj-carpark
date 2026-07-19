@@ -165,3 +165,29 @@
 2026-06-13 01:04:02 car left, plate 123
 2026-06-13 01:04:04 car left, plate 12
 2026-06-13 01:04:06 car left, plate 1
+2026-07-20 03:00:19 temperature is 3.0
+2026-07-20 03:00:19 temperature is 34.0
+2026-07-20 03:00:21 car entered, plate 43, model Unknown
+2026-07-20 03:00:24 car entered, plate 434, model Unknown
+2026-07-20 03:00:29 car entered, plate 4344, model Unknown
+2026-07-20 03:00:32 car entered, plate 43444, model Unknown
+2026-07-20 03:00:33 duplicate entry ignored for 43444
+2026-07-20 03:00:34 duplicate entry ignored for 43444
+2026-07-20 03:00:35 duplicate entry ignored for 43444
+2026-07-20 03:00:35 duplicate entry ignored for 43444
+2026-07-20 03:00:35 duplicate entry ignored for 43444
+2026-07-20 03:00:35 duplicate entry ignored for 43444
+2026-07-20 03:00:36 duplicate entry ignored for 43444
+2026-07-20 03:00:36 car left, plate 43444
+2026-07-20 03:00:38 exit ignored, unknown plate 43444
+2026-07-20 03:00:38 exit ignored, unknown plate 43444
+2026-07-20 03:00:42 car left, plate 4344
+2026-07-20 03:00:44 car left, plate 434
+2026-07-20 03:00:46 car left, plate 43
+2026-07-20 03:00:47 exit ignored, unknown plate 4
+2026-07-20 03:00:48 exit ignored, unknown plate 4
+2026-07-20 03:00:50 temperature is 4.0
+2026-07-20 03:00:50 temperature is 42.0
+2026-07-20 03:00:51 exit ignored, unknown plate 4
+2026-07-20 03:00:56 exit ignored, unknown plate 5t
+2026-07-20 03:00:56 car entered, plate 5t, model Unknown
