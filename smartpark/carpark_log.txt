@@ -1,0 +1,7 @@
+2026-06-09 18:06:28 temperature is 1.0
+2026-06-09 18:06:32 car entered, plate 1, model Unknown
+2026-06-09 18:06:42 car entered, plate 2, model Unknown
+2026-06-09 18:06:46 car entered, plate 3, model Unknown
+2026-06-09 18:06:53 car left, plate 1
+2026-06-09 18:06:57 exit ignored, unknown plate 4
+2026-06-09 18:07:01 exit ignored, unknown plate 46

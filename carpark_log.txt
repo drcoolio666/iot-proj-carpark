@@ -1,0 +1,167 @@
+2026-05-30 23:19:53 | entry rejected, blank plate
+2026-05-30 23:20:05 | temperature reading 1.0
+2026-05-30 23:20:05 | temperature reading 12.0
+2026-05-30 23:22:00 | entry, plate 13013, model Unknown
+2026-05-30 23:22:01 | exit, plate 13013, parked for 1 seconds
+2026-05-30 23:22:03 | entry, plate 13013, model Unknown
+2026-05-30 23:22:05 | duplicate entry ignored for plate 13013
+2026-05-30 23:22:15 | entry, plate 1701, model Unknown
+2026-05-30 23:22:23 | entry, plate 527, model Unknown
+2026-05-30 23:22:29 | exit anomaly, unknown plate 14752
+2026-05-30 23:22:34 | exit anomaly, unknown plate 14752
+2026-05-30 23:22:37 | entry, plate 1, model Unknown
+2026-05-30 23:22:41 | entry, plate 2, model Unknown
+2026-05-30 23:22:45 | entry, plate 3, model Unknown
+2026-05-30 23:22:49 | entry, plate 5, model Unknown
+2026-05-30 23:22:53 | exit, plate 1, parked for 15 seconds
+2026-05-30 23:22:57 | exit anomaly, unknown plate 4
+2026-05-30 23:22:59 | exit anomaly, unknown plate 4
+2026-05-30 23:23:01 | exit anomaly, unknown plate 4
+2026-05-30 23:23:04 | exit, plate 3, parked for 18 seconds
+2026-05-30 23:23:17 | exit anomaly, unknown plate 8
+2026-05-30 23:23:19 | exit anomaly, unknown plate 8
+2026-05-30 23:23:20 | exit anomaly, unknown plate 8
+2026-05-30 23:23:20 | exit anomaly, unknown plate 8
+2026-05-30 23:23:24 | exit anomaly, unknown plate 7
+2026-05-30 23:23:27 | exit anomaly, unknown plate 9
+2026-05-30 23:23:30 | exit anomaly, unknown plate 3
+2026-06-09 17:37:29 car entered, plate ABC123, model Toyota
+2026-06-09 17:37:29 car entered, plate DEF456, model Honda
+2026-06-09 17:37:29 temperature is 24.0
+2026-06-09 17:37:29 car left, plate ABC123
+2026-06-09 17:37:29 car entered, plate TEST01, model Demo
+2026-06-09 17:37:29 car left, plate TEST01
+2026-06-09 17:41:59 temperature is 5.0
+2026-06-09 17:42:00 temperature is 50.0
+2026-06-09 17:42:10 car entered, plate 1111, model Unknown
+2026-06-09 17:42:18 temperature is 4.0
+2026-06-09 17:42:18 temperature is 40.0
+2026-06-09 17:42:26 car entered, plate 2222, model Unknown
+2026-06-09 17:42:30 temperature is 3.0
+2026-06-09 17:42:31 temperature is 30.0
+2026-06-09 17:42:38 car entered, plate 3333, model Unknown
+2026-06-09 17:42:41 temperature is 4.0
+2026-06-09 17:42:43 temperature is 2.0
+2026-06-09 17:42:44 temperature is 20.0
+2026-06-09 17:42:54 car entered, plate 20, model Unknown
+2026-06-09 17:42:57 temperature is 1.0
+2026-06-09 17:42:57 temperature is 10.0
+2026-06-09 17:43:01 car entered, plate 10, model Unknown
+2026-06-09 17:43:07 temperature is 1.0
+2026-06-09 17:43:11 car entered, plate 1, model Unknown
+2026-06-09 17:43:17 temperature is 1.0
+2026-06-09 17:43:18 temperature is 10.0
+2026-06-09 17:43:21 temperature is 9.0
+2026-06-09 17:43:24 car entered, plate 9, model Unknown
+2026-06-09 17:43:30 temperature is 5.0
+2026-06-09 17:43:34 car entered, plate 5, model Unknown
+2026-06-09 17:43:40 temperature is 1.0
+2026-06-09 17:43:43 car left, plate 1
+2026-06-09 17:43:47 temperature is 2.0
+2026-06-09 17:43:49 exit ignored, unknown plate 2
+2026-06-09 17:43:55 temperature is 5.0
+2026-06-09 17:43:57 car left, plate 5
+2026-06-09 17:44:02 temperature is 5.0
+2026-06-09 17:44:03 temperature is 50.0
+2026-06-09 17:44:07 car left, plate 1111
+2026-06-09 17:44:14 temperature is 4.0
+2026-06-09 17:44:16 temperature is 40.0
+2026-06-09 17:44:19 car entered, plate 40, model Unknown
+2026-06-09 17:44:21 temperature is 5.0
+2026-06-09 17:44:23 temperature is 50.0
+2026-06-09 17:44:26 car entered, plate 50, model Unknown
+2026-06-09 17:44:30 duplicate entry ignored for 50
+2026-06-09 17:44:34 temperature is 3.0
+2026-06-09 17:44:35 temperature is 30.0
+2026-06-09 17:44:37 car entered, plate 30, model Unknown
+2026-06-09 17:44:39 duplicate entry ignored for 30
+2026-06-09 17:44:41 temperature is 2.0
+2026-06-09 17:44:42 temperature is 20.0
+2026-06-09 17:44:45 duplicate entry ignored for 20
+2026-06-09 17:44:47 duplicate entry ignored for 20
+2026-06-09 17:45:39 temperature is 1.0
+2026-06-09 17:45:41 car entered, plate 1, model Unknown
+2026-06-09 17:45:46 temperature is 2.0
+2026-06-09 17:45:47 car entered, plate 2, model Unknown
+2026-06-09 17:45:50 temperature is 3.0
+2026-06-09 17:45:52 car entered, plate 3, model Unknown
+2026-06-09 17:45:54 temperature is 4.0
+2026-06-09 17:45:57 car entered, plate 4, model Unknown
+2026-06-09 17:45:59 temperature is 5.0
+2026-06-09 17:46:01 car entered, plate 5, model Unknown
+2026-06-09 17:46:03 temperature is 6.0
+2026-06-09 17:46:05 car entered, plate 6, model Unknown
+2026-06-09 17:46:08 temperature is 7.0
+2026-06-09 17:46:11 car entered, plate 7, model Unknown
+2026-06-09 17:46:13 temperature is 8.0
+2026-06-09 17:46:15 car entered, plate 8, model Unknown
+2026-06-09 17:46:17 temperature is 9.0
+2026-06-09 17:46:19 duplicate entry ignored for 9
+2026-06-09 17:46:23 duplicate entry ignored for 9
+2026-06-09 17:46:25 temperature is 7.0
+2026-06-09 17:46:28 temperature is 1.0
+2026-06-09 17:46:28 temperature is 10.0
+2026-06-09 17:46:31 duplicate entry ignored for 10
+2026-06-09 17:46:33 duplicate entry ignored for 10
+2026-06-09 17:46:33 duplicate entry ignored for 10
+2026-06-09 17:46:35 temperature is 1.0
+2026-06-09 17:46:35 temperature is 11.0
+2026-06-09 17:46:37 car entered, plate 11, model Unknown
+2026-06-09 17:46:39 temperature is 1.0
+2026-06-09 17:46:40 temperature is 12.0
+2026-06-09 17:46:42 car entered, plate 12, model Unknown
+2026-06-09 17:46:43 temperature is 1.0
+2026-06-09 17:46:44 temperature is 13.0
+2026-06-09 17:46:48 car entered, plate 13, model Unknown
+2026-06-09 17:46:51 temperature is 1.0
+2026-06-09 17:46:51 temperature is 14.0
+2026-06-09 17:46:58 car entered, plate 14, model Unknown
+2026-06-09 17:47:02 temperature is 1.0
+2026-06-09 17:47:02 temperature is 15.0
+2026-06-09 17:47:06 car entered, plate 15, model Unknown
+2026-06-09 17:47:11 duplicate entry ignored for 1
+2026-06-09 17:47:16 duplicate entry ignored for 2
+2026-06-09 17:47:21 duplicate entry ignored for 3
+2026-06-09 17:47:25 duplicate entry ignored for 4
+2026-06-09 17:47:31 car entered, plate 16, model Unknown
+2026-06-09 17:47:35 car entered, plate 17, model Unknown
+2026-06-09 17:47:39 car entered, plate 18, model Unknown
+2026-06-09 17:47:42 car entered, plate 19, model Unknown
+2026-06-09 17:47:46 duplicate entry ignored for 20
+2026-06-09 18:05:08 temperature is 1.0
+2026-06-09 18:05:09 temperature is 10.0
+2026-06-09 18:05:09 temperature is 100.0
+2026-06-09 18:05:19 car entered, plate 100, model Unknown
+2026-06-09 18:05:25 car left, plate 1
+2026-06-09 18:05:30 car left, plate 2
+2026-06-09 18:05:33 car left, plate 3
+2026-06-09 18:49:01 temperature is 3.0
+2026-06-09 18:49:01 temperature is 30.0
+2026-06-09 18:49:07 car entered, plate 1, model Unknown
+2026-06-09 18:49:11 car entered, plate 12, model Unknown
+2026-06-09 18:49:13 car entered, plate 123, model Unknown
+2026-06-09 18:49:15 car entered, plate 1234, model Unknown
+2026-06-09 18:49:17 car entered, plate 12345, model Unknown
+2026-06-09 18:49:18 car entered, plate 123456, model Unknown
+2026-06-09 18:49:20 car entered, plate 1234567, model Unknown
+2026-06-09 18:49:25 car entered, plate 12345678, model Unknown
+2026-06-09 18:49:28 car entered, plate 123456789, model Unknown
+2026-06-09 18:49:34 car left, plate 1
+2026-06-13 01:03:14 temperature is 3.0
+2026-06-13 01:03:15 temperature is 30.0
+2026-06-13 01:03:23 car entered, plate 30, model Unknown
+2026-06-13 01:03:28 exit ignored, unknown plate 1
+2026-06-13 01:03:30 car entered, plate 1, model Unknown
+2026-06-13 01:03:32 car entered, plate 12, model Unknown
+2026-06-13 01:03:34 car entered, plate 123, model Unknown
+2026-06-13 01:03:39 car entered, plate 1234, model Unknown
+2026-06-13 01:03:41 car entered, plate 12345, model Unknown
+2026-06-13 01:03:43 car entered, plate 123456, model Unknown
+2026-06-13 01:03:46 car entered, plate 1234567, model Unknown
+2026-06-13 01:03:47 car entered, plate 12345678, model Unknown
+2026-06-13 01:03:49 car entered, plate 123456789, model Unknown
+2026-06-13 01:03:52 car entered, plate 1234567891, model Unknown
+2026-06-13 01:04:00 car left, plate 1234
+2026-06-13 01:04:02 car left, plate 123
+2026-06-13 01:04:04 car left, plate 12
+2026-06-13 01:04:06 car left, plate 1

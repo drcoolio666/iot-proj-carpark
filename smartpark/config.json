@@ -1,0 +1,27 @@
+{
+    "CarParks": [
+        {
+            "name": "moondalup_city_square",
+            "total-spaces": 130,
+            "total-cars": 0,
+            "location": "Moondalup",
+            "broker": "localhost",
+            "port": 1883,
+            "Sensors": [
+                {
+                    "name": "sensor1",
+                    "type": "entry"
+                },
+                {
+                    "name": "sensor2",
+                    "type": "exit"
+                }
+            ],
+            "Displays": [
+                {
+                    "name": "display1"
+                }
+            ]
+        }
+    ]
+}
